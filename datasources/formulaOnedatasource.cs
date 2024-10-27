@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using Microsoft.Extensions.Configuration;
+// using Microsoft.Extensions.Configuration;
 using System.Data.SqlClient;
 using System.Threading.Tasks;
 using Dapper;
@@ -14,13 +14,26 @@ class FormulaOnedatasource {
     private string connectionString;
 
     public FormulaOnedatasource() {
+        setConnectionString();
+    }
 
-        var configuration = new ConfigurationBuilder()
-                .SetBasePath(AppContext.BaseDirectory)
-                .AddJsonFile("/Users/pereiracc/Desktop/F1Console/appsettings.json")
-                .Build();
+    private void setConnectionString() {
 
-        connectionString = configuration.GetConnectionString("F1Connection");
+        // Acceder a la variable de entorno
+        string? envServer = Environment.GetEnvironmentVariable("SERVER");
+        string? envDB = Environment.GetEnvironmentVariable("BD");
+        string? envUser = Environment.GetEnvironmentVariable("USER");
+        string? envPassword = Environment.GetEnvironmentVariable("PASSWORD");
+
+        if (envServer != null && envDB != null && envUser != null && envPassword != null)
+        {
+            connectionString = "Server=" + envServer + ";Database="+ envDB + ";User Id=" + envUser + ";Password="+ envPassword + ";";
+        }
+        else
+        {
+            Console.WriteLine("Las variables de entorno no estan definidas.");
+            connectionString = null;
+        }
 
     }
 
@@ -31,6 +44,8 @@ class FormulaOnedatasource {
     private List<Team> getTeams() {
 
         List<Team> teams = new List<Team>();
+
+        if( connectionString == null ) return teams;
 
         using (var connection = new SqlConnection(connectionString))
         {

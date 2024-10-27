@@ -16,6 +16,8 @@ class Program
 
         List<Team> teams = f1.getDataF1();
 
+        if( teams.Count == 0 ) return;
+
         string? option;
 
         do
@@ -64,8 +66,8 @@ class Program
 //TODO: Crear los modelos => Listo
 //TODO: Crear los metodo para obtener la informacion => Listo
 //TODO: Crear mostrar los datos en console => Listo
-//TODO: Crear el DockerFile
-//TODO: Crear build de la imagen de docker
+//TODO: Crear el DockerFile => Listo
+//TODO: Crear build de la imagen de docker => Listo
 //TODO: Publicar la imagen de Docker
 //TODO: Subir codigo fuente a GIT
 //TODO: Crear docker compose para utilizar el app dockerizada
