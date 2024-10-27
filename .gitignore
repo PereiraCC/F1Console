@@ -1,0 +1,31 @@
+# Archivos de build
+bin/
+obj/
+
+# Archivos de usuario
+*.user
+*.suo
+*.sln.docstates
+
+# Archivos de configuración de Rider
+.idea/
+
+# Archivos de configuración de Visual Studio
+.vs/
+.vscode/
+
+# Configuraciones de NuGet
+*.nupkg
+*.snupkg
+packages/
+
+# Archivos de configuración de Mac
+.DS_Store
+
+# Logs
+*.log
+
+# Otros archivos temporales
+*.tmp
+*.temp
+
