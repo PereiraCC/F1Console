@@ -13,7 +13,7 @@ dotnet restore
 ```
 export SERVER="yourValue"
 export BD="yourValue"
-export USER="yourValue"
+export USERBD="yourValue"
 export PASSWORD="yourValue"
 ```
 
@@ -21,7 +21,7 @@ export PASSWORD="yourValue"
 ```
 set SERVER=yourValue
 set BD=yourValue
-set USER=yourValue
+set USERBD=yourValue
 set PASSWORD=yourValue
 ```
 
