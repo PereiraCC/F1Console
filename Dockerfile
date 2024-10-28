@@ -21,7 +21,7 @@ COPY --from=build /app/out ./
 # Se establecen las env
 ENV SERVER=${SERVER}
 ENV BD=${BD}
-ENV USER=${USER}
+ENV USERBD=${USERBD}
 ENV PASSWORD=${PASSWORD}
 
 # Se levanta el app

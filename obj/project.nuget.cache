@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lX4CMzpSQY4XPU6HW3/s3xn2ogukrvTGia0RxuBnlq/abH5YJ+17WerSHxjJGA3m9Kd/ljC6ydhr99nQp4t7PA==",
+  "dgSpecHash": "5BQPKVx6ydaHCo72TL9sYbKrPWxuCC2pxRClGXQ9RKCIkw0ZlEWicnnISz4nZAv67uc/+lVbFduC7DdaJn4G+g==",
   "success": true,
-  "projectFilePath": "/Users/pereiracc/Desktop/F1Console/F1Console.csproj",
+  "projectFilePath": "/Users/pereiracc/Desktop/docker/F1Console/F1Console.csproj",
   "expectedPackageFiles": [
     "/Users/pereiracc/.nuget/packages/dapper/2.1.35/dapper.2.1.35.nupkg.sha512",
     "/Users/pereiracc/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",

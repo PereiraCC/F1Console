@@ -2531,11 +2531,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/pereiracc/Desktop/F1Console/F1Console.csproj",
+      "projectUniqueName": "/Users/pereiracc/Desktop/docker/F1Console/F1Console.csproj",
       "projectName": "F1Console",
-      "projectPath": "/Users/pereiracc/Desktop/F1Console/F1Console.csproj",
+      "projectPath": "/Users/pereiracc/Desktop/docker/F1Console/F1Console.csproj",
       "packagesPath": "/Users/pereiracc/.nuget/packages/",
-      "outputPath": "/Users/pereiracc/Desktop/F1Console/obj/",
+      "outputPath": "/Users/pereiracc/Desktop/docker/F1Console/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/pereiracc/.nuget/NuGet/NuGet.Config"

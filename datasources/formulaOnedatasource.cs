@@ -22,7 +22,7 @@ class FormulaOnedatasource {
         // Acceder a la variable de entorno
         string? envServer = Environment.GetEnvironmentVariable("SERVER");
         string? envDB = Environment.GetEnvironmentVariable("BD");
-        string? envUser = Environment.GetEnvironmentVariable("USER");
+        string? envUser = Environment.GetEnvironmentVariable("USERBD");
         string? envPassword = Environment.GetEnvironmentVariable("PASSWORD");
 
         if (envServer != null && envDB != null && envUser != null && envPassword != null)
